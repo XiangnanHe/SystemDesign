@@ -1,0 +1,25 @@
+Design Recommender System
+
+1. Heuristic solution
+For example, based on the video costumer viewed, recommend videos from same auther, same category, same label, 
+popularity(customer review and # of shares)
+
+2. Collaborative filtering
+Find similarity between users or items, and then recommend
+User-based CF: similarity between users
+Item-based CF: similarity between items
+
+3. Feature engineering
+Take youtube video as an example
+features such as 
+1) Explicit: Like/Share/Subscribe, ratings, favorate, title/label/categories 
+2) Implicit: Watch time, freshness
+
+4. Infrastructure
+Can be categorized to two parts:
+Offline: Big data platform, run periodically, distributed on different clusters
+Online: Quick filtering (removed already viewed videos) - freshness and rank from a longer list of videos.
+
+Freshness is important
+Evaluation needed to analyze how well the recommender system works
+Training of the recommender system requires video position signal, videos ranked on top has better chance to be clicked
